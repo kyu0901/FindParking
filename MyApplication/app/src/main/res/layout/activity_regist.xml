@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_regis2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.androidtown.myapplication.RegistActivity">
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="180dp"
+        android:id="@+id/userID"
+        android:hint="ID" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/userPassword"
+        android:hint="Password"
+        android:layout_below="@+id/userID"
+        android:layout_alignLeft="@+id/userID"
+        android:layout_alignStart="@+id/userID" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/userPassword"
+        android:layout_alignLeft="@+id/userPassword"
+        android:layout_alignStart="@+id/userPassword"
+        android:id="@+id/PasswordConfirm"
+        android:hint="PasswordConfirm" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="차량 크기"
+        android:layout_below="@+id/PasswordConfirm"
+        android:layout_alignLeft="@+id/CarKind"
+        android:layout_alignStart="@+id/CarKind"
+        android:layout_marginTop="5dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CarKind"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/PasswordConfirm"
+        android:layout_alignStart="@+id/PasswordConfirm"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/SmallCar"
+            android:text="Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/MidCar"
+            android:text="Middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="장애 여부"
+        android:layout_below="@+id/CarKind"
+        android:layout_alignLeft="@+id/CarKind"
+        android:layout_alignStart="@+id/CarKind"
+        android:layout_marginTop="5dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CheckDisability"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/PasswordConfirm"
+        android:layout_alignStart="@+id/PasswordConfirm"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/Disability"
+            android:text="유"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/Ability"
+            android:text="무"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CheckDisability"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="73dp">
+
+        <Button
+            android:id="@+id/FinRegist"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"/>
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/parking4"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="450dp" />
+
+
+</RelativeLayout>
