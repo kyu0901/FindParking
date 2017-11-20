@@ -49,7 +49,7 @@ public class Login {
             /*act.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Log.i("runnable", response);
+                    Log.i("runnable!", response);
                 }
             });*/
 
